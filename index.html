@@ -19,8 +19,55 @@
 </head>
 
 <body>
-    <header>
-        <h1>Initial Setup done.</h1>
+    <header class="w-11/12 mx-auto my-10">
+        <!-- nav bar -->
+        <nav>
+            <div class="navbar bg-base-100 shadow-sm">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Shop</a> </li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <img class="h-4" src="./images/logo.webp" alt="">
+                        <a class="font-bold text-2xl">Peddy</a>
+                    </div>
+                </div>
+                <div class="navbar-center lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a><i class="fa-solid fa-shield-cat"></i></a>
+                </div>
+            </div>
+        </nav>
+        <!-- banner section -->
+        <section class="text-center pt-10 w-[750px] mx-auto">
+            <p class="text-gray-400 font-bold text-xl lg:text-2xl">
+                Bringing Families Together ❤️‍🔥
+            </p>
+            <h1 class="text-4xl lg:text-6xl font-black py-5">Your Path to Adoption Starts Here</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at layout. The point of using Lorem Ipsum is that it has a.</p>
+            <button onclick="viewMore()" id="view-more"
+                class="btn px-8 py-4 mt-5 text-white font-bold border rounded-lg bg-[#0E7A81]">View More</button>
+            <img class="h-[500] w-[800] pt-10 mx-auto" src="./images/pet.webp" alt="">
+        </section>
     </header>
     <main></main>
     <footer></footer>
