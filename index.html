@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header class="w-11/12 mx-auto my-10">
+    <header class="w-11/12 hidden mx-auto my-10">
         <!-- nav bar -->
         <nav>
             <div class="navbar bg-base-100 shadow-sm">
@@ -69,7 +69,40 @@
             <img class="h-[500] w-[800] pt-10 mx-auto" src="./images/pet.webp" alt="">
         </section>
     </header>
-    <main></main>
+    <main class="w-11/12 mx-auto my-10 ">
+        <!-- cat button container section -->
+        <section>
+            <div class="w-2/3 md:w-[750px] mx-auto text-center">
+                <h1 class="text-3xl font-black py-5">Adopt Your Best Friend</h1>
+                <p class="text-[#131313] text-opacity-70">It is a long established fact that a reader will be distracted
+                    by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+            </div>
+            <div id="category-btn-container"></div>
+        </section>
+        <div class="flex justify-between items-center mt-5">
+            <h1 class="text-2xl font-semibold">Best Deal For you</h1>
+            <button class="btn bg-[#0E7A81] text-white">Sort by Price</button>
+        </div>
+        <!-- all category container -->
+        <section class=" my-10">
+            <!-- spineer -->
+            <div id="spineer" class="hidden text-center mb-10 "><span class="loading loading-bars loading-xs"></span>
+            </div>
+            <div class="grid   grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
+                <!-- card section -->
+                <div id="category-card-container"
+                    class="rounded-xl   p-5 col-span-1 md:col-span-2 lg:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+                </div>
+
+                <!-- images section -->
+                <div id="pet-image-container"
+                    class="col-span-1 h-fit grid grid-cols-1 md:grid-cols-2 rounded-xl w-full gap-2 p-2">
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 
     <script src="./js/index.js"></script>
